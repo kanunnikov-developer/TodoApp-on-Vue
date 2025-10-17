@@ -1,0 +1,20 @@
+@import "./base.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --border: #ededed;
+  --hover-color: #0b0b0b;
+  --dark-color: #2d2d2d;
+  --background: #fafafa;
+  --description-text-color: #666666;
+  --secondary-color: #b2b2b2;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  letter-spacing: -1%;
+  font-size: 20px;
+  color: var(--dark-color);
+  background: var(--background);
+}
