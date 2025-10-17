@@ -6,6 +6,7 @@ export const useTodosStore = defineStore("todos", () => {
   const todos = ref([]);
 
   const completedTodos = computed(() => todos.value.filter((todo) => todo.checked));
+  const workedTodos = computed(() => todos.value.filter((todo) => todo.checked === false));
 
   async function fetchTodos() {
     try {
@@ -48,5 +49,5 @@ export const useTodosStore = defineStore("todos", () => {
     todos.value.push(newTodo);
   }
 
-  return { todos, completedTodos, fetchTodos, deleteTodo, compliteTodo, updateTodoLocally, addTodo };
+  return { todos, completedTodos, workedTodos, fetchTodos, deleteTodo, compliteTodo, updateTodoLocally, addTodo };
 });

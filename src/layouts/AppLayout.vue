@@ -22,6 +22,9 @@ import AppMenu from "./AppMenu.vue";
   width: 310px;
   height: 100vh;
   border-right: 1px solid var(--border);
+  position: sticky; /* ← добавляем */
+  top: 0; /* ← прилипает к верху */
+  align-self: flex-start; /* ← важно для sticky */
 }
 
 .root {

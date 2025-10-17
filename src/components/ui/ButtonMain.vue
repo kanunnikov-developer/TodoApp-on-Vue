@@ -1,20 +1,16 @@
-<script setup>
-const props = defineProps({
-  text: {
-    type: String,
-    default: "",
-  },
-});
-</script>
+<script setup></script>
 
 <template>
   <button class="btn">
-    {{ props.text }}
+    <slot></slot>
   </button>
 </template>
 
 <style scoped>
 .btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   text-align: left;
   padding: 15px 20px;
   color: var(--dark-color);

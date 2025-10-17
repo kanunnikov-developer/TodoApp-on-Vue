@@ -19,6 +19,10 @@ const modalEditStore = useModalEditStore();
       <div class="title">{{ props.todo.title }}</div>
       <div class="status">{{ props.todo.status }}</div>
       <div class="description">{{ props.todo.description }}</div>
+      <div class="user">
+        <img src="/userIcon.svg" alt="user" />
+        <div class="userName">Александр Канунников</div>
+      </div>
     </div>
     <div class="controls">
       <div class="edit">
@@ -40,6 +44,9 @@ const modalEditStore = useModalEditStore();
   border: 1px solid var(--border);
   border-radius: 10px;
 }
+.text {
+  margin-bottom: 20px;
+}
 
 .title {
   font-size: 18px;
@@ -57,7 +64,16 @@ const modalEditStore = useModalEditStore();
   font-size: 14px;
   font-weight: 400;
   color: var(--description-text-color);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .controls {
